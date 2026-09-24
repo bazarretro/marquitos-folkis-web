@@ -15,11 +15,19 @@
   <meta property="og:site_name" content="Marquitos Folkis">
   <meta property="og:locale" content="es_AR">
   <meta property="og:url" content="https://marquitosfolkis.com.ar/">
-  <meta property="og:image" content="https://marquitosfolkis.com.ar/assets/hero.webp">
+  <meta property="og:image" content="https://marquitosfolkis.com.ar/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Marquitos Folkis tocando la guitarra al aire libre">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Marquitos Folkis — Músico y productor">
   <meta name="twitter:description" content="Folklore, producción musical, sesiones de guitarra, arreglos, mezcla y mastering desde La Plata.">
-  <meta name="twitter:image" content="https://marquitosfolkis.com.ar/assets/hero.webp">
+  <meta name="twitter:image" content="https://marquitosfolkis.com.ar/assets/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
@@ -29,6 +37,7 @@
     "name": "Marquitos Folkis",
     "alternateName": "Marcos Castillo",
     "url": "https://marquitosfolkis.com.ar/",
+    "image": "https://marquitosfolkis.com.ar/assets/og-image.jpg",
     "sameAs": [
       "https://www.instagram.com/marquitosfolkis/",
       "https://open.spotify.com/artist/1kTVRD7szHqzGoNF8fCkQG"
@@ -50,11 +59,11 @@
 <body>
   <header class="site-header" id="inicio">
     <a href="#inicio" class="brand" aria-label="Marquitos Folkis, inicio">
-      <img class="brand-logo" src="assets/logo-bone.png" alt="Marquitos Folkis">
+      <img class="brand-logo" src="assets/logo-bone.webp" alt="Marquitos Folkis" width="248" height="167">
       <span class="brand-sub">músico · productor</span>
     </a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Navegación principal">
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="nav-principal" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal">
       <a href="#musica">Música</a>
       <a href="#trabajos">Trabajos</a>
       <a href="#marquitos">Marquitos</a>
@@ -65,7 +74,7 @@
 
   <main>
     <section class="hero">
-      <img class="hero-image" src="assets/hero.webp" alt="Marquitos Folkis tocando la guitarra al aire libre">
+      <img class="hero-image" src="assets/hero.webp" srcset="assets/hero-828.webp 828w, assets/hero.webp 1391w" sizes="100vw" width="1391" height="1800" fetchpriority="high" alt="Marquitos Folkis tocando la guitarra al aire libre">
       <div class="hero-overlay"></div>
       <div class="hero-content container">
         <p class="eyebrow">La Plata · Argentina</p>
@@ -136,7 +145,7 @@
     </section>
 
     <section class="about-grid" id="marquitos">
-      <div class="about-photo"><img src="assets/marquitos.webp" alt="Retrato de Marquitos Folkis caminando al aire libre"></div>
+      <div class="about-photo"><img src="assets/marquitos.webp" srcset="assets/marquitos-800.webp 800w, assets/marquitos.webp 1448w" sizes="(max-width: 900px) 100vw, 50vw" width="1448" height="1086" loading="lazy" decoding="async" alt="Retrato en blanco y negro de Marquitos Folkis frente a un mural de grafiti, entre una guitarra eléctrica y una criolla"></div>
       <div class="about-copy">
         <p class="eyebrow dark">Marquitos</p>
         <h2>Folklore, armonía y una cabeza inquieta.</h2>
@@ -147,7 +156,7 @@
     </section>
 
     <section class="identity-strip">
-      <img src="assets/wiphala-detail.webp" alt="Detalle del tatuaje de Wiphala de Marquitos Folkis junto a una guitarra">
+      <img src="assets/wiphala-detail.webp" srcset="assets/wiphala-detail-1000.webp 1000w, assets/wiphala-detail.webp 1800w" sizes="(max-width: 900px) 100vw, 36vw" width="1800" height="1200" loading="lazy" decoding="async" alt="Detalle del tatuaje de Wiphala de Marquitos Folkis junto a una guitarra">
       <div><p class="eyebrow">Una identidad que aparece en los detalles</p><p>La relación con el folklore y la cultura latinoamericana no necesita convertirse en un slogan: está en el repertorio, los arreglos, las referencias y la manera de hacer música.</p></div>
     </section>
 
@@ -169,7 +178,7 @@
     </section>
 
     <section class="shows-section">
-      <div class="shows-image"><img src="assets/guitar-back.webp" alt="Marquitos Folkis tocando la guitarra al aire libre"></div>
+      <div class="shows-image"><img src="assets/guitar-back.webp" srcset="assets/guitar-back-1000.webp 1000w, assets/guitar-back.webp 1800w" sizes="(max-width: 900px) 100vw, 55vw" width="1800" height="1200" loading="lazy" decoding="async" alt="Marquitos Folkis tocando la guitarra al aire libre"></div>
       <div class="shows-copy">
         <p class="eyebrow">Shows</p>
         <h2>Marquitos Folkis en vivo.</h2>
@@ -195,11 +204,11 @@
 
   <footer>
     <div class="container footer-inner">
-      <img class="footer-logo" src="assets/logo-bone.png" alt="Marquitos Folkis">
+      <img class="footer-logo" src="assets/logo-bone.webp" alt="Marquitos Folkis" width="248" height="167" loading="lazy" decoding="async">
       <p>La Plata · Argentina</p>
       <p>© <span id="year"></span> Marquitos Folkis</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
